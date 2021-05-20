@@ -1,0 +1,129 @@
+margin {40px}
+	
+html {
+	height: auto;
+    min-height: 100%;
+}
+
+body {
+	/* 
+	The background-image code for a gradient bacground was generated from the following link:
+	https://mycolor.space/gradient?ori=to+right+bottom&hex=%23051937&hex2=%23339DAB&sub=1
+	*/
+	background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px white;
+  border-color: black;
+  border-style: solid;
+}
+
+h4 {
+	font-family: "Lucida Console", "Courier New", monospace;
+	color: black;
+}
+
+#instructions {
+	background-color: white;
+	color: black;
+	border-color: black;
+  	border-style: solid;
+  	padding-left: 10px;
+}
+
+.buttons {
+	font-size: 14px;
+	border-radius: 12px;
+	background-color: white;
+  	color: black;
+  	border: 2px solid black;
+  	padding: 5px;
+}
+
+.buttons:hover {
+  background-color: black;
+  color: white;
+}
+
+#level {
+	background-color: white;
+  	color: black;
+	width: fit-content;
+	border-color: black;
+ 	border-style: solid;
+ 	padding: 5px;
+}
+
+.rdb {
+	border-radius: 40%;
+}
+
+#timer {
+	background-color: white;
+  	color: black;
+	width: fit-content;
+	border-color: black;
+  	padding: 2px;
+}
+
+.hide-img:hover {
+	box-shadow: 0px 0px 0px 5px black;
+}
+
+div#newgrideasy {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+}
+
+div#newgridhard {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+}
+
+div#newgrid {
+    display: grid;
+    grid-template-columns: auto auto auto; /*repeat(4, 1fr)*/
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+}
+
+.hide-img {
+	position: relative;
+}
+
+.front-cardopen{
+	backface-visibility: hidden;
+    transform: rotateY(180deg);
+    position: relative;
+}
+
+.front-card {
+	position: relative;
+    top: 0;
+    left: 0;
+}
+
+.back-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

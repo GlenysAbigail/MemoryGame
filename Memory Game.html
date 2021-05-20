@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Memory Game</title>
+</head>
+<body>
+
+	<link href="MemoryGameCSS.css" rel="stylesheet">
+	<script src="MemoryGame.js"></script>
+
+	<!-- Title of the game -->
+	<div id="heading">
+		<p id="gamename"> <h1> Memory Game </h1> </p>
+	</div>
+
+	<!-- Instructions to be followed to play the game -->
+	<div id="instructions">
+		<p id = "instructtitle">
+			<h3> Instructions </h3>
+			<b> Step 1: </b> Choose Level <br>
+			<b> Step 2: </b> Press Start Game! <br>
+			<b> Step 3: </b> When you are ready to start the timer, press Start Timer!<br><br>
+			Play the game :D <br><br>
+			<b> To restart game:</b> <br>
+			Choose Level again <br>
+			Click on Clear Screen! <br>
+			Click on Start Timer! <br><br>
+			<b> Note:</b> you can Stop Timer! if you wish to restart game. 
+		</p>
+	</div> 
+	<br>
+	
+	<!-- Radio buttons used to select the level (normal is default if no level is chosen) -->
+	<div id="level"> Select Level:
+		<input type="radio" class = "rdb" id = "easy" name="level">
+		<label for = "easy"> Easy </label>
+		<input type="radio" class = "rdb" id = "normal" name="level">
+		<label for = "normal"> Normal </label>
+		<input type="radio" class = "rdb" id = "hard" name="level">
+		<label for = "hard"> Hard</label> 
+	</div> 
+	<br>
+	
+	<!-- The buttons needed to start, stop, and start again -->
+	<div id = "buttons">
+		<button id = "btn1" class = "buttons" onclick="useFetch()"> Start Game! </button>
+		<button id = "btnget" class = "buttons" onclick="startTimer()"> Start Timer! </button>
+		<button id = "btn2" class = "buttons"  onclick="clearScreen()"> Clear Screen! </button>
+		<button id = "btntime" class = "buttons" onclick="stopTimer()"> Stop Timer!</button>
+	</div>
+
+	<!-- Two <p> elements to display the number of clicks (pair of clicks) and best score -->
+	<div id ="userinfo">
+		<p id = "clicks"></p>
+		<p id = "result"></p>
+	</div> 
+	<br>
+
+	<!-- <div> element used here to display the countdown  -->
+	<div id="timer">
+	</div>
+	
+	<br>
+	
+</body>
+</html>
